@@ -5,6 +5,7 @@ const configuredOrigins = (process.env.CLIENT_URL || "")
 
 export const allowedOrigins = [
   "http://localhost:5173",
+  "https://contractor-frontend-khaki.vercel.app",
   "https://contractor-frontend-six.vercel.app",
   ...configuredOrigins,
 ];
