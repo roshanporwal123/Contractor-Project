@@ -9,7 +9,7 @@ import {
   deleteProjectDoc,
 } from "../api/projectApi";
 
-const API_URL = import.meta.env.VITE_API_URL?.replace("/api", "") || "https://contractor-backend.vercel.app/";
+const API_URL = import.meta.env.VITE_API_URL?.replace("/api", "") || "https://contractor-backend.vercel.app";
 
 export default function ProjectDetail() {
   const { id } = useParams();

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import api from "../api/axios";
 
-const FILE_BASE = import.meta.env.VITE_API_URL?.replace("/api", "") || "https://contractor-backend.vercel.app/";
+const FILE_BASE = import.meta.env.VITE_API_URL?.replace("/api", "") || "https://contractor-backend.vercel.app";
 
 export default function TaskDetail() {
   const { id } = useParams();
