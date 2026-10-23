@@ -1,0 +1,36 @@
+.nb-wrap { position: relative; display: inline-block; }
+.nb-btn {
+  position: relative; background: none; border: none;
+  font-size: 22px; cursor: pointer; padding: 6px 8px;
+}
+.nb-badge {
+  position: absolute; top: 0; right: 0; background: #e11d48; color: #fff;
+  font-size: 11px; min-width: 18px; height: 18px; border-radius: 9px;
+  display: flex; align-items: center; justify-content: center; padding: 0 4px;
+}
+.nb-dropdown {
+  position: absolute; right: 0; top: 110%; width: 340px; max-width: 92vw;
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12); z-index: 1000; overflow: hidden;
+}
+.nb-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; border-bottom: 1px solid #f1f5f9;
+}
+.nb-link { background: none; border: none; color: #2563eb; cursor: pointer; font-size: 13px; }
+.nb-list { max-height: 360px; overflow-y: auto; }
+.nb-item {
+  display: flex; gap: 10px; padding: 10px 14px; cursor: pointer;
+  border-bottom: 1px solid #f8fafc;
+}
+.nb-item:hover { background: #f8fafc; }
+.nb-unread { background: #eff6ff; }
+.nb-icon { font-size: 20px; }
+.nb-title { font-weight: 600; font-size: 14px; }
+.nb-msg { font-size: 13px; color: #475569; }
+.nb-time { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+.nb-empty { text-align: center; padding: 24px; color: #94a3b8; }
+.nb-footer {
+  width: 100%; padding: 10px; border: none; background: #f8fafc;
+  cursor: pointer; color: #2563eb; font-weight: 600;
+}

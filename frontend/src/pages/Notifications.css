@@ -1,0 +1,32 @@
+.np-page { max-width: 800px; margin: 24px auto; padding: 0 16px; text-align: left; }
+.np-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.np-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.np-actions button, .np-more {
+  padding: 6px 12px; border: 1px solid #cbd5e1; background: #fff;
+  border-radius: 6px; cursor: pointer;
+}
+.np-danger { color: #e11d48; border-color: #fecdd3 !important; }
+.np-check { font-size: 14px; display: flex; gap: 4px; align-items: center; }
+.np-tabs { display: flex; gap: 6px; overflow-x: auto; margin: 16px 0; padding-bottom: 4px; }
+.np-tab {
+  padding: 6px 14px; border-radius: 999px; border: 1px solid #e2e8f0;
+  background: #fff; cursor: pointer; white-space: nowrap;
+}
+.np-tab.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.np-item {
+  display: flex; gap: 12px; align-items: flex-start; padding: 14px;
+  border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 8px;
+  background: #fff; cursor: pointer;
+}
+.np-item:hover { background: #f8fafc; }
+.np-unread { background: #eff6ff; border-color: #bfdbfe; }
+.np-icon { font-size: 24px; }
+.np-body { flex: 1; }
+.np-title { font-weight: 600; }
+.np-dot { display: inline-block; width: 8px; height: 8px; background: #2563eb; border-radius: 50%; margin-left: 6px; }
+.np-msg { color: #475569; font-size: 14px; margin-top: 2px; }
+.np-time { color: #94a3b8; font-size: 12px; margin-top: 4px; }
+.np-del { background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 16px; }
+.np-del:hover { color: #e11d48; }
+.np-empty { text-align: center; color: #94a3b8; padding: 40px 0; }
+.np-more { display: block; margin: 16px auto; }
