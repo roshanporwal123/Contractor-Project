@@ -17,13 +17,18 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (email, password, role) => {
     const res = await api.post("/auth/login", { email, password, role });
+    if (res.data.token) sessionStorage.setItem("authToken", res.data.token);
     setUser(res.data.user);
     return res.data.user;
   };
 
   const logout = async () => {
-    await api.post("/auth/logout");
-    setUser(null);
+    try {
+      await api.post("/auth/logout");
+    } finally {
+      sessionStorage.removeItem("authToken");
+      setUser(null);
+    }
   };
 
   return (
